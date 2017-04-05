@@ -9,24 +9,24 @@ The Overall Design was choosen and decided from the Buehler AG design team.
 ![App-Icon](https://github.com/ImBeCiliC/BuehlerApp/blob/master/App-Icon.png?raw=true)
 
 # Start-Screen
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Start-Screen.png?raw=true" width="500" height="720"/>
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Start-Screen.png?raw=true" width="427" height="720"/>
 
 <h1>Settings-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png?raw=true" width="500" height="720"/>
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png?raw=true" width="427" height="720"/>
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="427" height="720" />
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="427" height="720" />
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="427" height="720" />
 
 <h1>Camera-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera.png?raw=true" width="520" height="720" />
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera-Pressed.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera.png?raw=true" width="427" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera-Pressed.png?raw=true" width="427" height="720" />
 
 <h1>Computing-Screen</h1>
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Computing.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Computing.png?raw=true" width="427" height="720" />
 
 <h1>Result-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Result.png?raw=true" width="500" height="720" />
+<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Result.png?raw=true" width="427" height="720" />
