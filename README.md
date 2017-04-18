@@ -6,8 +6,8 @@ In that case Buehler AG send us the App-Design, App-Icon and Custom-Camera-Butto
 
 # Design
 The Overall Design was choosen and decided from the Buehler AG design team.
-![App-Design|small](https//c1.staticflickr.com/3/2827/34081064976_eb99c8c307_m.jpg)
-![App-Icon](https//c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
+![App-Design|small](https://c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
+![App-Icon](https://c1.staticflickr.com/3/2827/34081064976_eb99c8c307_m.jpg)
 
 # Start-Screen
 <img src="https://c1.staticflickr.com/3/2843/33736613820_016aa2c1a2_b.jpg" width="427" height="720"/>
