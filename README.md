@@ -6,32 +6,32 @@ In that case Buehler AG send us the App-Design, App-Icon and Custom-Camera-Butto
 
 # Design
 The Overall Design was choosen and decided from the Buehler AG design team.
-![App-Design|small](https://cloud.githubusercontent.com/assets/6640705/24713473/1373fbfe-1a26-11e7-8aa9-a400ff03b968.png)
-![App-Icon](https://github.com/ImBeCiliC/BuehlerApp/blob/master/App-Icon.png?raw=true)
+![App-Design|small](https//c1.staticflickr.com/3/2827/34081064976_eb99c8c307_m.jpg)
+![App-Icon](https//c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
 
 # Start-Screen
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Start-Screen.png?raw=true" width="427" height="720"/>
+<img src="https://c1.staticflickr.com/3/2843/33736613820_016aa2c1a2_b.jpg" width="427" height="720"/>
 
 <h1>Settings-Screen</h1>
 <div style="float: left;">
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png" width="427" height="720"/>
+  <img src="https://c1.staticflickr.com/3/2819/33279124484_4d86b3881b_b.jpg" width="427" height="720"/>
 
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="427" height="720" />
+  <img src="https://c1.staticflickr.com/3/2913/33736613940_7f171c4115_b.jpg" width="427" height="720" />
 
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="427" height="720" />
+  <img src="https://c1.staticflickr.com/3/2882/34081064496_4e1398b147_b.jpg" width="427" height="720" />
 
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="427" height="720" />
+  <img src="https://c1.staticflickr.com/4/3948/33279124454_b79e433b66_b.jpg" width="427" height="720" />
 </div>
 
 <h1>Camera-Screen</h1>
 <div style="float: left;">
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera.png?raw=true" width="427" height="720" />
-  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera-Pressed.png?raw=true" width="427" height="720" />
+  <img src="https://c1.staticflickr.com/3/2821/33736614330_ec154431f3_b.jpg" width="427" height="720" />
+  <img src="https://c1.staticflickr.com/3/2941/33279125764_c933ee14d6_b.jpg" width="427" height="720" />
 </div>
 
 <h1>Computing-Screen</h1>
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Computing.png?raw=true" width="427" height="720" />
+<img src="https://c1.staticflickr.com/3/2941/33279124784_d3035d1c37_b.jpg" width="427" height="720" />
 
 <h1>Result-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Result.png?raw=true" width="427" height="720" />
+<img src="https://c1.staticflickr.com/3/2870/33736613990_4452469e48_b.jpg" width="427" height="720" />
