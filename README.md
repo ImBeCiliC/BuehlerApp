@@ -12,14 +12,15 @@ The Overall Design was choosen and decided from the Buehler AG design team.
 <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Start-Screen.png?raw=true" width="427" height="720"/>
 
 <h1>Settings-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png?raw=true" width="427" height="720"/>
+<div style="float: left">
+  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png?raw=true" width="427" height="720"/>
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="427" height="720" />
+  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="427" height="720" />
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="427" height="720" />
+  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="427" height="720" />
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="427" height="720" />
-
+  <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="427" height="720" />
+</div>
 <h1>Camera-Screen</h1>
 <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera.png?raw=true" width="427" height="720" />
 <img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera-Pressed.png?raw=true" width="427" height="720" />
