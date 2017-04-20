@@ -20,13 +20,14 @@ The design suggestions were provided by Bühler Group.
 
 ### Workflow
 
-The main steps:
+The main steps (screens):
 
-- Splash screen
-- Input from user ( info screen if user has questions)
-- User takes the picture
-- Computing screen
-- Final screen with the result
+- Splash screen with the Bühler logo.
+- Input screen: user specifies the die number, width and arc length.
+- Info screen: user can have a look at the suggestions for the input data.
+- Camera screen: user takes the picture of the pellet mill die so that it fits in the given region.
+- Computing screen: the animation is shown during computations.
+- Final screen: the result of the calculations is shown.
 
 ![App-Design|small](https://c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
 
@@ -43,8 +44,11 @@ The main steps:
 
   <img src="https://c1.staticflickr.com/3/2882/34081064496_4e1398b147_b.jpg" width="427" height="720" />
 
-  <img src="https://c1.staticflickr.com/4/3948/33279124454_b79e433b66_b.jpg" width="427" height="720" />
-</div>
+</div>  
+
+### Info screen
+<img src="https://c1.staticflickr.com/4/3948/33279124454_b79e433b66_b.jpg" width="427" height="720" />
+
 
 ### Camera screen
 <div style="float: left;">
