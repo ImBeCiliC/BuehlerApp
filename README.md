@@ -1,15 +1,17 @@
-# BuehlerApp
-The Buehler App was Developed for a Freelancer-Project. The Project was made with my friend https://www.linkedin.com/in/klimkolyvanov/ <br>
-► He developed the Image-Processing and Algorithms for the Calculation. He was also responsible for the communication with the Project Manager<br>
+## BuehlerApp
+
+The BuehlerApp is a freelance project made by [Klim](https://github.com/milkyklim) and me.
+
+► Klim developed the Image-Processing and Algorithms for the Calculation. He was also responsible for the communication with the Project Manager<br>
 ► My Task was to develop the Android-App, Debugging and Testing<br>
 In that case Buehler AG send us the App-Design, App-Icon and Custom-Camera-Buttons.<br>
 
-# Design
+## Design
 The Overall Design was choosen and decided from the Buehler AG design team.
 ![App-Design|small](https://c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
 ![App-Icon](https://c1.staticflickr.com/3/2827/34081064976_eb99c8c307_m.jpg)
 
-# Start-Screen
+## Start-Screen
 <img src="https://c1.staticflickr.com/3/2843/33736613820_016aa2c1a2_b.jpg" width="427" height="720"/>
 
 <h1>Settings-Screen</h1>
