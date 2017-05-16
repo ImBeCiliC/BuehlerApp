@@ -1,32 +1,84 @@
-# BuehlerApp
-The Buehler App was Developed for a Freelancer-Project. The Project was made with my friend https://www.linkedin.com/in/klimkolyvanov/ <br>
-► He developed the Image-Processing and Algorithms for the Calculation. He was also responsible for the communication with the Project Manager<br>
-► My Task was to develop the Android-App, Debugging and Testing<br>
-In that case Buehler AG send us the App-Design, App-Icon and Custom-Camera-Buttons.<br>
-# Design
-The Overall Design was choosen and decided from the Buehler AG design team.
-![App-Design|small](https://cloud.githubusercontent.com/assets/6640705/24713473/1373fbfe-1a26-11e7-8aa9-a400ff03b968.png)
-![App-Icon](https://github.com/ImBeCiliC/BuehlerApp/blob/master/App-Icon.png?raw=true)
+## BuehlerApp
 
-# Start-Screen
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Start-Screen.png?raw=true" width="427" height="720"/>
+The BuehlerApp is a freelance project made by [Klim](https://github.com/milkyklim) and me.
 
-<h1>Settings-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Disabled.png?raw=true" width="427" height="720"/>
+## Project Description
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Enabled.png?raw=true" width="427" height="720" />
+Bühler Group was planning to develop a cloud based photo app for the service personnel in the feed milling industries to enhance efficiency and ensure quality of our customer maintenance service.
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Settings-Pressed.png?raw=true" width="427" height="720" />
+Unexperienced service personnel is calculating or estimating a wrong amount of holes in the pellet mill dies when doing the maintenance of the pellet mills on customer site. The **amount of holes** is crucial for the output and wrong information can have serious impacts for the customers.
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Tutorial.png?raw=true" width="427" height="720" />
+Our **task** was to make the service personnel’s life easier and ensure quality by developing a photo app. The app should automatically calculate the amount of holes in a pellet mill die using a photo of the die, specified diameter and arc length.
 
-<h1>Camera-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera.png?raw=true" width="427" height="720" />
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Camera-Pressed.png?raw=true" width="427" height="720" />
+## Roles
 
-<h1>Computing-Screen</h1>
+- [Klim](https://github.com/milkyklim) developed the algorithm, implemented it in [Processing](https://www.processing.org) and embedded the code into the Android application. He was communicating with the project manager from the Bühler Group.
 
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Computing.png?raw=true" width="427" height="720" />
+- I was responsible for the Android application development, debugging and testing.
 
-<h1>Result-Screen</h1>
-<img src="https://github.com/ImBeCiliC/BuehlerApp/blob/master/Result.png?raw=true" width="427" height="720" />
+The design suggestions were provided by Bühler Group.
+
+## Algorithm Description
+
+After multiple ideas I decided to go with the simplest (reliability and implementation time) possible solution. The app had to process the photo on the phone without sending the data to the cloud.
+
+Therefore, we use the following algorithm which involves only thresholding and morphological operations.
+
+- Take a picture.
+- Take a central third of the image to speedup the calculations.
+- Threshold the part of the image (since the pictures are taken under the same conditions the threshold value can be constant).
+- Apply morphological operations – dilate and erode – to get rid of the detached pixels.
+- Find all blobs in the image.
+- Check that the blobs have reasonable size – not too small (big) for the wholes.
+- Count the number of all holes in the pellet mill die using the formula:
+
+$$ N_{total} = \frac{2 \pi}{l} \cdot N_{arc} \text{, where} $$
+
+$l$ is the length of the arc provided by user;
+$N_{arc}$ is the number of wholes corresponding to the given arc length.
+
+## Application Description
+
+### Workflow
+
+The main steps (screens):
+
+- Splash screen with the Bühler logo.
+- Input screen: user specifies the die number, width and arc length.
+- Info screen: user can have a look at the suggestions for the input data.
+- Camera screen: user takes the picture of the pellet mill die so that it fits in the given region.
+- Computing screen: the animation is shown during computations.
+- Final screen: the result of the calculations is shown.
+
+![App-Design|small](https://c1.staticflickr.com/3/2942/34081065246_4c58d3b644_b.jpg)
+
+<!-- ![App-Icon](https://c1.staticflickr.com/3/2827/34081064976_eb99c8c307_m.jpg) -->
+
+### Splash screen
+<img src="https://c1.staticflickr.com/3/2843/33736613820_016aa2c1a2_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+
+### Input screen
+<div style="float: left;">
+  <img src="https://c1.staticflickr.com/3/2819/33279124484_4d86b3881b_b.jpg" style='height: 100%; width: 100%; object-fit: cover'/>
+
+  <img src="https://c1.staticflickr.com/3/2913/33736613940_7f171c4115_b.jpg" style='height: 100%; width: 100%; object-fit: cover'/>
+
+  <img src="https://c1.staticflickr.com/3/2882/34081064496_4e1398b147_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+
+</div>
+
+### Info screen
+<img src="https://c1.staticflickr.com/4/3948/33279124454_b79e433b66_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+
+
+### Camera screen
+<div style="float: left;">
+  <img src="https://c1.staticflickr.com/3/2821/33736614330_ec154431f3_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+  <img src="https://c1.staticflickr.com/3/2941/33279125764_c933ee14d6_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+</div>
+
+### Computing screen
+<img src="https://c1.staticflickr.com/3/2941/33279124784_d3035d1c37_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
+
+### Result screen
+<img src="https://c1.staticflickr.com/3/2870/33736613990_4452469e48_b.jpg" style='height: 100%; width: 100%; object-fit: cover' />
