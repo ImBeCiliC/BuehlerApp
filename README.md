@@ -20,26 +20,22 @@ The design suggestions were provided by Bühler Group.
 
 ## Algorithm Description
 
-**PROOF READ**
+After multiple ideas I decided to go with the simplest (reliability and implementation time) possible solution. The app had to process the photo on the phone without sending the data to the cloud.
 
-After multiple ideas I decided to go with the simplest possible solution. The main idea behind that was the fact that we had to process the photo on the phone and we don't send the data to the cloud.
-
-Moreover, we were processing regular pattern (circles) and the there was necessity to use anything sophisticated.
-
-Therefore, we use this simple algorithm which involves only thresholding and morphological operations.
+Therefore, we use the following algorithm which involves only thresholding and morphological operations.
 
 - Take a picture.
-- Take a third of it to speedup the calculations.
-- Threshold it. Since the pictures are taken under the same conditions the threshold value can be constant.
-- Apply morphological operations. Dilate and Erode. To get rid of separate (detached) pixels.
-- Look for all blobs that are in the image.
-- Go through the image and check that the blobs have reasonable size – not too small for the wholes.
-- After we count the holes in the given image we count the number of all holes in the pellet mill die using the formula:
+- Take a central third of the image to speedup the calculations.
+- Threshold the part of the image (since the pictures are taken under the same conditions the threshold value can be constant).
+- Apply morphological operations – dilate and erode – to get rid of the detached pixels.
+- Find all blobs in the image.
+- Check that the blobs have reasonable size – not too small (big) for the wholes.
+- Count the number of all holes in the pellet mill die using the formula:
 
-\\[N_{total} = 2 \pi / arc_length \cdot N_arc \\]
+$$ N_{total} = \frac{2 \pi}{l} \cdot N_{arc} \text{, where} $$
 
-where $$arc_length$$ is the length of the arc provided by user
-and $$N_arc$$ is the number of wholes corresponding to the given arc length.
+$l$ is the length of the arc provided by user;
+$N_{arc}$ is the number of wholes corresponding to the given arc length.
 
 ## Application Description
 
@@ -69,7 +65,7 @@ The main steps (screens):
 
   <img src="https://c1.staticflickr.com/3/2882/34081064496_4e1398b147_b.jpg" width="427" height="720" />
 
-</div>  
+</div>
 
 ### Info screen
 <img src="https://c1.staticflickr.com/4/3948/33279124454_b79e433b66_b.jpg" width="427" height="720" />
