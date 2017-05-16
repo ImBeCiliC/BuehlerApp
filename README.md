@@ -2,7 +2,7 @@
 
 The BuehlerApp is a freelance project made by [Klim](https://github.com/milkyklim) and me.
 
-### Description
+## Project Description
 
 Bühler Group was planning to develop a cloud based photo app for the service personnel in the feed milling industries to enhance efficiency and ensure quality of our customer maintenance service.
 
@@ -10,13 +10,38 @@ Unexperienced service personnel is calculating or estimating a wrong amount of h
 
 Our **task** was to make the service personnel’s life easier and ensure quality by developing a photo app. The app should automatically calculate the amount of holes in a pellet mill die using a photo of the die, specified diameter and arc length.
 
-### Roles
+## Roles
 
 - [Klim](https://github.com/milkyklim) developed the algorithm, implemented it in [Processing](https://www.processing.org) and embedded the code into the Android application. He was communicating with the project manager from the Bühler Group.
 
 - I was responsible for the Android application development, debugging and testing.
 
 The design suggestions were provided by Bühler Group.
+
+## Algorithm Description
+
+**PROOF READ**
+
+After multiple ideas I decided to go with the simplest possible solution. The main idea behind that was the fact that we had to process the photo on the phone and we don't send the data to the cloud.
+
+Moreover, we were processing regular pattern (circles) and the there was necessity to use anything sophisticated.
+
+Therefore, we use this simple algorithm which involves only thresholding and morphological operations.
+
+- Take a picture.
+- Take a third of it to speedup the calculations.
+- Threshold it. Since the pictures are taken under the same conditions the threshold value can be constant.
+- Apply morphological operations. Dilate and Erode. To get rid of separate (detached) pixels.
+- Look for all blobs that are in the image.
+- Go through the image and check that the blobs have reasonable size – not too small for the wholes.
+- After we count the holes in the given image we count the number of all holes in the pellet mill die using the formula:
+
+\\[N_{total} = 2 \pi / arc_length \cdot N_arc \\]
+
+where $$arc_length$$ is the length of the arc provided by user
+and $$N_arc$$ is the number of wholes corresponding to the given arc length.
+
+## Application Description
 
 ### Workflow
 
