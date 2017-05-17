@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acitivity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="62dp"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="imbecilic.milkyklim.pelletmilldiephotoapp.PelletMillSettings">
+
+    <TextView
+        android:text="@string/settingsHeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/settingsHeadline"
+        android:textSize="32dp"
+        android:gravity="center"/>
+
+    <Button
+        android:text="@string/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:background="@drawable/mybutton"
+        android:enabled="false"
+        android:elevation="10dp" />
+
+    <EditText
+        android:ems="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:id="@+id/dieArcLength"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:maxLength="9"
+        android:hint="@string/dieArcLength"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/die_diameter"
+        android:layout_alignStart="@+id/die_diameter"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="9"
+        android:gravity="center"
+        android:id="@+id/die_diameter"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:maxLength="9"
+        android:hint="@string/dieDiameter"
+        android:paddingTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="9"
+        android:id="@+id/die_number"
+        android:hint="@string/dieNumber"
+        android:gravity="center"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:maxLength="9"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/die_diameter"
+        android:layout_alignStart="@+id/die_diameter" />
+
+    <Button
+        android:layout_width="@dimen/questionmark2"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionMark"
+        android:background="@drawable/questionmark"
+        android:layout_alignTop="@+id/dieArcLength"
+        android:layout_toEndOf="@+id/dieArcLength"
+        android:layout_alignBottom="@+id/dieArcLength" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acitivity_settings_instruction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="15dp"
+    android:paddingLeft="36dp"
+    android:paddingRight="36dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/White"
+    tools:context="imbecilic.milkyklim.pelletmilldiephotoapp.PelletMillSettings">
+
+    <Button
+        android:text="@string/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:background="@drawable/mybutton"
+        android:enabled="true"
+        android:elevation="10dp" />
+
+    <TextView
+        android:text="@string/settingsInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_instruction"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/arclength"
+        android:id="@+id/instruction_image"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/close"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/settings_instruction" />
+</RelativeLayout>

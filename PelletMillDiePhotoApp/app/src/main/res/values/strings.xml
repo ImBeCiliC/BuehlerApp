@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pelletzei</string>
+    <string name="dieNumber">Number</string>
+    <string name="dieArcLength">Arc length (mm)</string>
+    <string name="dieDiameter">Diameter (mm)</string>
+    <string name="next">NEXT</string>
+    <string name="close">Close</string>
+    <string name="settingsHeadline">Die parameters</string>
+    <string name="cameraInstructions">Make sure that the die width fits in the window below</string>
+    <string name="resultHeadline">Your die has</string>
+    <string name="resultNumber">0</string>
+    <string name="resultHoles">holes</string>
+    <string name="resultDone">DONE</string>
+    <string name="computing">Computing...</string>
+    <string name="settingsInstruction">Please measure arc length of a reference die segment and mark it on the die</string>
+</resources>
